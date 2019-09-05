@@ -1,3 +1,5 @@
+// используется и в билде и в деве
+
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // если запусить тpm run dev - будет рендер проекта из памяти,
@@ -52,9 +54,6 @@ module.exports = {
                 ]
             }
         ]
-    },
-    devServer: {
-        overlay: true
     },
     plugins: [
         new MiniCssExtractPlugin({
